@@ -1,0 +1,150 @@
+/* src/App.css */
+@import url("./fonts.css");
+
+/* Prevent scrolling of the entire screen */
+html,
+body {
+	overflow: hidden;
+	font-family: "MC", sans-serif;
+}
+
+button {
+	font-family: "Minecraftia", sans-serif;
+	font-size: large;
+	vertical-align: middle;
+	background-color: #3f51b5;
+}
+
+input {
+	font-family: "Minecraftia", sans-serif;
+	vertical-align: middle;
+}
+
+/* Apply styles to the app container */
+.app-container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.app-header {
+	background-color: #ffcc33; /* Change the background color to #ffcc33 */
+	color: white;
+	padding: 10px;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+/* Add padding to create separation between header and chat */
+.chat-container {
+	flex-grow: 1;
+	overflow-y: auto;
+	padding: 60px 20px 10px;
+}
+
+/* Apply fixed positioning to the chat input */
+.chat-input {
+	margin-top: 10px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #f0f0f0;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.chat-input input {
+	flex-grow: 1;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+.chat-input button {
+	background-color: #ffcc33;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 12px 12px 12px 12px; /* Adjust the padding as needed */
+	cursor: pointer;
+	font-size: 16px;
+	display: flex; /* Enable flexbox */
+	align-items: center !important; /* Center vertically with !important */
+	justify-content: center; /* Center horizontally */
+}
+
+/* Message bubbles */
+.message {
+	max-width: 80%;
+	margin: 8px auto; /* Center the message bubbles horizontally */
+	padding: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	word-wrap: break-word;
+	position: relative;
+	clear: both;
+}
+
+/* Auto-generated responses (assistant) */
+.assistant {
+	background-color: #e8e8eb;
+	color: #000;
+}
+
+/* User-typed messages */
+.user {
+	background-color: #006633;
+	color: #fff;
+}
+
+/* Arrow shape for user messages */
+.user::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right: 15px solid #006633; /* Use the user message background color */
+}
+
+/* Arrow shape for assistant messages */
+.assistant::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 15px solid #e8e8eb; /* Use the assistant message background color */
+}
+
+/* src/App.css */
+
+/* ... (previous styles) */
+
+/* Loader styles */
+.loader {
+	text-align: center;
+	padding: 10px;
+	font-size: 16px;
+	color: #333;
+	background-color: #fff;
+	border-radius: 5px;
+	margin: 10px auto;
+	width: 100px;
+	animation: loader-spin 1s infinite linear;
+}

@@ -1,0 +1,13 @@
+@font-face {
+	font-family: "Minecraftia";
+	src: url("./fonts/Minecraft.ttf") format("truetype"); /* Adjust the path to match your font file location and format */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "MC";
+	src: url("./fonts/MinecraftRegular-Bmg3.otf") format("truetype"); /* Adjust the path to match your font file location and format */
+	font-weight: normal;
+	font-style: normal;
+}
